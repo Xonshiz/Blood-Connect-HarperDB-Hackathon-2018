@@ -7,6 +7,7 @@ The data collected from the users is solely used for generating Insights like De
 Presentation for this project can be found in `HarperDB Presentation` directory/folder. Whereas, the source code can be found in the `app` directory/folder.
 
 Team Name : IGNEEL
+
 Designed and Developed by Dhruv Kanojia.
 
 # Screens
