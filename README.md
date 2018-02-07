@@ -4,7 +4,7 @@ This application is built for the sole purpose of the [`HarperDB Hackathon, 2018
 
 The data collected from the users is solely used for generating Insights like Density of Blood groups in a country, state or world.
 
-Presentation for this project can be found in `HarperDB Presentation` directory/folder. Whereas, the source code can be found in the `app` directory/folder.
+Presentation for this project can be found in [`HarperDB Presentation`](https://github.com/Xonshiz/HarperDB-Hackathon-2018/tree/master/HarperDB%20Presentation) directory/folder. Whereas, the source code can be found in the [`app`](https://github.com/Xonshiz/HarperDB-Hackathon-2018/tree/master/app/BloodConnect) directory/folder. The back-end APIs can be found in the [`api`](https://github.com/Xonshiz/HarperDB-Hackathon-2018/tree/master/api) folder
 
 Team Name : IGNEEL
 
