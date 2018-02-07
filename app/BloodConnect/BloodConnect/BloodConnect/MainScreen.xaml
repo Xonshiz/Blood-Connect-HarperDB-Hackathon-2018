@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns:local="clr-namespace:BloodConnect"
+            xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="BloodConnect.MainScreen"
+            NavigationPage.HasNavigationBar="False"
+            BarTextColor="White" BarBackgroundColor="#cc181e">
+    <ContentPage Title="Past Donation" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+        
+        <StackLayout RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                     Margin="2,15,2,10">
+            
+            <StackLayout RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+
+                <Label Text="No Previous History Of Donation" IsVisible="False" TextColor="Black"
+                       VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
+                       Margin="15,15,15,15" x:Name="tempLable"/>
+                <ListView x:Name="pastDonationList" SeparatorColor="LightGray" HasUnevenRows="True"
+                          IsPullToRefreshEnabled="True" Refreshing="pastDonationListView_Refresh">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal" Padding="5">
+                                    <StackLayout HorizontalOptions="StartAndExpand">
+                                        <Label Text="{Binding requesterName}" VerticalTextAlignment="Start" TextColor="Black"/>
+                                        <Label Text="{Binding donationDate}" VerticalTextAlignment="Start" TextColor="Gray"/>
+                                    </StackLayout>
+                                    <Label Text="{Binding donationCountry}" VerticalTextAlignment="Start" TextColor="DarkSlateGray"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+
+            <Button Text="Request Blood" Clicked="newRequest_Clicked" BackgroundColor="#cc181e" HorizontalOptions="EndAndExpand"
+                    VerticalOptions="EndAndExpand" BorderColor="Black" TextColor="White" FontAttributes="None" Margin="0,0,10,10"/>
+        </StackLayout>
+    </ContentPage>
+
+    <local:Requests />
+
+    <local:StudyData />
+    
+</TabbedPage>

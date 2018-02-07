@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BloodConnect.NewRequest"
+             Padding="15,20,15,15"
+             Title="New Request">
+    <ContentPage.Content>
+        <StackLayout x:Name="newRequestsPage"
+                 RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+            <Entry x:Name="donation_BloodType" Placeholder="Blood Type" PlaceholderColor="#dfdfdf"
+                           TextColor="Black" FontAttributes="None" BackgroundColor="White"
+                           HorizontalTextAlignment="Center" Margin="10,0,10,5"/>
+            
+            <Picker x:Name="donation_Country" SelectedIndexChanged="dataPicker_OnSelectedIndexChanged" Margin="10,0,10,5">
+                <Picker.Items>
+                    <x:String>Select The Country</x:String>
+                    <x:String>India</x:String>
+                    <x:String>United States Of America</x:String>
+                </Picker.Items>
+                <Picker.SelectedIndex>
+                    0
+                </Picker.SelectedIndex>
+            </Picker>
+
+            <Picker x:Name="donation_State" IsEnabled="False" Margin="10,0,10,5">
+            </Picker>
+
+            <Entry x:Name="donation_AreaCode" Placeholder="Area Code" PlaceholderColor="#dfdfdf"
+                           TextColor="Black" FontAttributes="None" BackgroundColor="White"
+                           HorizontalTextAlignment="Center" Margin="10,0,10,5"/>
+            <Entry x:Name="donation_PhoneNumber" Placeholder="Contact Number" PlaceholderColor="#dfdfdf"
+                           TextColor="Black" FontAttributes="None" BackgroundColor="White"
+                           HorizontalTextAlignment="Center" Margin="10,0,10,5"/>
+            <Button Text="Submit" Clicked="submit_Clicked" TextColor="White" 
+                    BackgroundColor="#cc181e" FontAttributes="None" Margin="10,0,10,5"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

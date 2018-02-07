@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BloodConnect.Requests"
+             Title="Pending Requests">
+    <StackLayout RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                 Margin="2,15,2,10">
+        
+        <ListView x:Name="pendingRequestsList" SeparatorColor="LightGray" HasUnevenRows="True"
+              IsPullToRefreshEnabled="True" Refreshing="pendingRequestsListView_Refresh"  ItemSelected="pendingRequestSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="5">
+                            <StackLayout HorizontalOptions="StartAndExpand">
+                                <Label Text="{Binding requester_name}" VerticalTextAlignment="Start" TextColor="Black"/>
+                                <Label Text="{Binding donation_id}" VerticalTextAlignment="Start" TextColor="Gray"/>
+                            </StackLayout>
+                            <Label Text="{Binding requester_country}" VerticalTextAlignment="Start" TextColor="DarkSlateGray"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BloodConnect.StudyData"
+             xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             Title="Study Data">
+    <ContentPage.Content>
+        <RelativeLayout RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+            
+            <ScrollView RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                        Margin="10,5,5,10">
+                
+                <StackLayout RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                     Margin="10,5,5,10">
+                    
+                    <Picker x:Name="dataPicker" Title="Ratio List" SelectedIndexChanged="dataPicker_OnSelectedIndexChanged">
+                        <Picker.Items>
+                            <x:String>Select An Option</x:String>
+                            <x:String>Ratio of Blood Types In A Country</x:String>
+                            <x:String>Ratio of Blood Types In A State</x:String>
+                            <x:String>Ratio of Blood Types In World</x:String>
+                        </Picker.Items>
+                        <Picker.SelectedIndex>
+                            0
+                        </Picker.SelectedIndex>
+                    </Picker>
+
+                    <Picker x:Name="countryPicker" IsEnabled="False" SelectedIndexChanged="countryPicker_OnSelectedIndexChanged">
+                    </Picker>
+
+                    <microcharts:ChartView x:Name="chartView" HeightRequest="500" Margin="5,5,5,5"/>
+
+                </StackLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BloodConnect"
+             x:Class="BloodConnect.MainPage"
+              NavigationPage.HasNavigationBar="False">
+
+    <ContentPage x:Name="loginPage" Title="Existing User" Padding="15,0,15,0"
+                 RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" >
+        
+        <StackLayout VerticalOptions="Center"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+
+            <Entry x:Name="userEmail_Login" Placeholder="Registered Email Id..." PlaceholderColor="#dfdfdf"
+                           TextColor="Black" FontAttributes="None" BackgroundColor="White"
+                           HorizontalTextAlignment="Center" Margin="10,0,10,5"/>
+            <Entry x:Name="userPassword_Login" Placeholder="Password..." PlaceholderColor="#dfdfdf"
+                           TextColor="Black" FontAttributes="None" BackgroundColor="White" IsPassword="True"
+                           HorizontalTextAlignment="Center" Margin="10,0,10,5"/>
+            <Button x:Name="loginButton" Text="Log In" Clicked="loginButton_Clicked" TextColor="White" 
+                    BackgroundColor="#cc181e" FontAttributes="None" Margin="10,0,10,5"/>
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage x:Name="registerPage"  Title="New User" Padding="15,0,15,0"
+                 RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+        <StackLayout VerticalOptions="Center"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+
+            <Entry x:Name="name_register" Placeholder="Full Name" PlaceholderColor="#dfdfdf"
+                           TextColor="Black" FontAttributes="None" BackgroundColor="White"
+                           HorizontalTextAlignment="Center" Margin="10,0,10,5"/>
+            <Entry x:Name="age_register" Placeholder="Age" PlaceholderColor="#dfdfdf"
+                           TextColor="Black" FontAttributes="None" BackgroundColor="White"
+                           HorizontalTextAlignment="Center" Margin="10,0,10,5" Keyboard="Numeric"/>
+            <Entry x:Name="areaCode_register" Placeholder="Area Code" PlaceholderColor="#dfdfdf"
+                           TextColor="Black" FontAttributes="None" BackgroundColor="White"
+                           HorizontalTextAlignment="Center" Margin="10,0,10,5"/>
+            <Picker x:Name="country_register" Margin="10,0,10,5" SelectedIndexChanged="countryPicker_OnSelectedIndexChanged">
+                <Picker.Items>
+                    <x:String>Select Your Country</x:String>
+                    <x:String>India</x:String>
+                    <x:String>United States Of America</x:String>
+                </Picker.Items>
+                <Picker.SelectedIndex>
+                    0
+                </Picker.SelectedIndex>
+            </Picker>
+            <Picker x:Name="state_register" Margin="10,0,10,5" IsEnabled="False">
+            </Picker>
+
+            <Picker x:Name="bloodType_register" Margin="10,0,10,5">
+                <Picker.Items>
+                    <x:String>Select Your Blood Type</x:String>
+                    <x:String>A</x:String>
+                    <x:String>B</x:String>
+                    <x:String>AB</x:String>
+                    <x:String>O</x:String>
+                </Picker.Items>
+                <Picker.SelectedIndex>
+                    0
+                </Picker.SelectedIndex>
+            </Picker>
+            
+            <!--<Entry x:Name="bloodType_register" Placeholder="Blood Type" PlaceholderColor="#dfdfdf"
+                           TextColor="Black" FontAttributes="None" BackgroundColor="White"
+                           HorizontalTextAlignment="Center" Margin="10,0,10,5" Keyboard="Text"/>-->
+            <Entry x:Name="email_register" Placeholder="Email ID" PlaceholderColor="#dfdfdf"
+                           TextColor="Black" FontAttributes="None" BackgroundColor="White"
+                           HorizontalTextAlignment="Center" Margin="10,0,10,5"/>
+            <Entry x:Name="phone_register" Placeholder="Phone Number" PlaceholderColor="#dfdfdf"
+                           TextColor="Black" FontAttributes="None" BackgroundColor="White"
+                           HorizontalTextAlignment="Center" Margin="10,0,10,5" Keyboard="Telephone"/>
+            <Entry x:Name="password_register" Placeholder="Password" PlaceholderColor="#dfdfdf"
+                           TextColor="Black" FontAttributes="None" BackgroundColor="White"
+                           HorizontalTextAlignment="Center" Margin="10,0,10,5" IsPassword="True"/>
+            <Button x:Name="registerButton" Text="Register" Clicked="registerButton_Clicked" TextColor="White" 
+                    BackgroundColor="#cc181e" FontAttributes="None" Margin="10,0,10,5"/>
+        </StackLayout>
+    </ContentPage>
+
+</CarouselPage>
