@@ -10,3 +10,13 @@ Team Name : IGNEEL
 Designed and Developed by Dhruv Kanojia.
 
 # Screens
+
+![](images/3.png?raw=true)
+
+![](images/4.png?raw=true)
+
+![](images/6.png?raw=true)
+
+![](images/7.png?raw=true)
+
+![](images/8.png?raw=true)
