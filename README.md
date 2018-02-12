@@ -3,7 +3,7 @@ This application is built for the sole purpose of the [`HarperDB Hackathon, 2018
 
 The data collected from the users is solely used for generating Insights like Density of Blood groups in a country, state or world.
 
-Presentation for this project can be found in [`HarperDB Presentation`](https://github.com/Xonshiz/HarperDB-Hackathon-2018/tree/master/HarperDB%20Presentation) directory/folder. Whereas, the source code can be found in the [`app`](https://github.com/Xonshiz/HarperDB-Hackathon-2018/tree/master/app/BloodConnect) directory/folder. The back-end APIs can be found in the [`api`](https://github.com/Xonshiz/HarperDB-Hackathon-2018/tree/master/api) folder
+Presentation for this project can be found in [`HarperDB Presentation`](https://github.com/Xonshiz/Blood-Connect-HarperDB-Hackathon-2018/tree/master/HarperDB%20Presentation) directory/folder. Whereas, the source code can be found in the [`app`](https://github.com/Xonshiz/Blood-Connect-HarperDB-Hackathon-2018/tree/master/app/BloodConnect) directory/folder. The back-end APIs can be found in the [`api`](https://github.com/Xonshiz/Blood-Connect-HarperDB-Hackathon-2018/tree/master/api) folder
 
 
 # Team Info :
@@ -13,15 +13,15 @@ Team Member(s) : [Dhruv Kanojia](@xonshiz)
 
 
 # Architecture :
-![Architecture Image](https://raw.githubusercontent.com/Xonshiz/HarperDB-Hackathon-2018/master/images/Architecture.jpg)
+![Architecture Image](https://raw.githubusercontent.com/Xonshiz/Blood-Connect-HarperDB-Hackathon-2018/master/images/Architecture.jpg)
 
 
 # Insights :
-![Blood Groups In A Country](https://raw.githubusercontent.com/Xonshiz/HarperDB-Hackathon-2018/master/images/Misc/6.png)
+![Blood Groups In A Country](https://raw.githubusercontent.com/Xonshiz/Blood-Connect-HarperDB-Hackathon-2018/master/images/Misc/6.png)
 
-![Blood Groups In A State](https://raw.githubusercontent.com/Xonshiz/HarperDB-Hackathon-2018/master/images/Misc/7.png)
+![Blood Groups In A State](https://raw.githubusercontent.com/Xonshiz/Blood-Connect-HarperDB-Hackathon-2018/master/images/Misc/7.png)
 
-![Blood Groups In World](https://raw.githubusercontent.com/Xonshiz/HarperDB-Hackathon-2018/master/images/Misc/8.png)
+![Blood Groups In World](https://raw.githubusercontent.com/Xonshiz/Blood-Connect-HarperDB-Hackathon-2018/master/images/Misc/8.png)
 
 
 # Running This Project :
@@ -35,16 +35,16 @@ The minimum Android OS that you need to run this project is Lollipop (API Level 
     - Read Google Service Configuration
     
 - #### Instructions For Direct APK Installation :
-    If you want to run this application on your android phone, please move over to the "[`Release`](https://github.com/Xonshiz/HarperDB-Hackathon-2018/releases/latest)" section and download the latest stable APK build for your android phone. You do not need any external libraries or application.
+    If you want to run this application on your android phone, please move over to the "[`Release`](https://github.com/Xonshiz/Blood-Connect-HarperDB-Hackathon-2018/releases/latest)" section and download the latest stable APK build for your android phone. You do not need any external libraries or application.
 
 - #### Instructions For Developers/Testers :
-     If you're a developer or any user who wishes to test this application and run this android project, it's recommended to install Visual Studio with Xamarin Support and Android SDKs on your system. Remember that Android SDKs should be in your local path for you to be able to compile the project properly. You can find the source code in the "[SOURCE](https://github.com/Xonshiz/HarperDB-Hackathon-2018/tree/master/app/BloodConnect)" directory.
+     If you're a developer or any user who wishes to test this application and run this android project, it's recommended to install Visual Studio with Xamarin Support and Android SDKs on your system. Remember that Android SDKs should be in your local path for you to be able to compile the project properly. You can find the source code in the "[SOURCE](https://github.com/Xonshiz/Blood-Connect-HarperDB-Hackathon-2018/tree/master/app/BloodConnect)" directory.
 
     If you do not happen to have Visual Studio, it is recommended to get it because it'll download all the required packages on its own, if they're not present. You can use Visual Studio's Free Community Edition. It'll work, as we've developed this application on it.
 But, if for some reason, you don't want to or can't install Visual Studio, you will need to have .NET, Xamarin, Android SDK and required Packages in your system's local path for you to be able to compile and execute this application project.
 
 
 # Screens
-![](https://raw.githubusercontent.com/Xonshiz/HarperDB-Hackathon-2018/master/images/Misc/3.png)
+![](https://raw.githubusercontent.com/Xonshiz/Blood-Connect-HarperDB-Hackathon-2018/master/images/Misc/3.png)
 
-![](https://raw.githubusercontent.com/Xonshiz/HarperDB-Hackathon-2018/master/images/Misc/4.png)
+![](https://raw.githubusercontent.com/Xonshiz/Blood-Connect-HarperDB-Hackathon-2018/master/images/Misc/4.png)
