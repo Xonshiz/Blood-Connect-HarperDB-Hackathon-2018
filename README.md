@@ -8,6 +8,7 @@ Presentation for this project can be found in [`HarperDB Presentation`](https://
 
 # Team Info :
 Team Name : IGNEEL
+
 Team Member(s) : [Dhruv Kanojia](@xonshiz)
 
 
@@ -44,12 +45,6 @@ But, if for some reason, you don't want to or can't install Visual Studio, you w
 
 
 # Screens
-![](images/3.png?raw=true)
+![](https://raw.githubusercontent.com/Xonshiz/HarperDB-Hackathon-2018/master/images/Misc/3.png)
 
-![](images/4.png?raw=true)
-
-![](images/6.png?raw=true)
-
-![](images/7.png?raw=true)
-
-![](images/8.png?raw=true)
+![](https://raw.githubusercontent.com/Xonshiz/HarperDB-Hackathon-2018/master/images/Misc/4.png)
