@@ -1,5 +1,5 @@
 # HarperDB-Hackathon-2018
-This application is built for the sole purpose of the [`HarperDB Hackathon, 2018`](www.harperdb.io/harperdb-virtual-hackathon-2018). The aim of this application is to make it easier for people to request and donate blood. The application shows a list of various requesters in your State. It only shows the list of matching blood types, which makes it further easier to distinguish the entries. Donor and Requester stay anonymous to each other, which removes any kind of discrimination possible.
+This application is built for the sole purpose of the [`HarperDB Hackathon, 2018`](http://www.harperdb.io/harperdb-virtual-hackathon-2018). The aim of this application is to make it easier for people to request and donate blood. The application shows a list of various requesters in your State. It only shows the list of matching blood types, which makes it further easier to distinguish the entries. Donor and Requester stay anonymous to each other, which removes any kind of discrimination possible.
 
 The data collected from the users is solely used for generating Insights like Density of Blood groups in a country, state or world.
 
@@ -9,7 +9,7 @@ Presentation for this project can be found in [`HarperDB Presentation`](https://
 # Team Info :
 Team Name : IGNEEL
 
-Team Member(s) : [Dhruv Kanojia](@xonshiz)
+Team Member(s) : [Dhruv Kanojia](https://github.com/Xonshiz)
 
 
 # Architecture :
