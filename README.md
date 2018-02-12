@@ -1,18 +1,29 @@
 # HarperDB-Hackathon-2018
-
-This application is built for the sole purpose of the [`HarperDB Hackathon, 2018`](www.harperdb.io/harperdb-virtual-hackathon-2018). The aim of this application is to make it easier for people to request and donate blood. The application shows a list of various requesters in your State. It only shows the list of matching blood types, which makes it further easier to distinguish the entries.
+This application is built for the sole purpose of the [`HarperDB Hackathon, 2018`](www.harperdb.io/harperdb-virtual-hackathon-2018). The aim of this application is to make it easier for people to request and donate blood. The application shows a list of various requesters in your State. It only shows the list of matching blood types, which makes it further easier to distinguish the entries. Donor and Requester stay anonymous to each other, which removes any kind of discrimination possible.
 
 The data collected from the users is solely used for generating Insights like Density of Blood groups in a country, state or world.
 
 Presentation for this project can be found in [`HarperDB Presentation`](https://github.com/Xonshiz/HarperDB-Hackathon-2018/tree/master/HarperDB%20Presentation) directory/folder. Whereas, the source code can be found in the [`app`](https://github.com/Xonshiz/HarperDB-Hackathon-2018/tree/master/app/BloodConnect) directory/folder. The back-end APIs can be found in the [`api`](https://github.com/Xonshiz/HarperDB-Hackathon-2018/tree/master/api) folder
 
-Team Name : IGNEEL
 
-Designed and Developed by Dhruv Kanojia.
+# Team Info :
+Team Name : IGNEEL
+Team Member(s) : [Dhruv Kanojia](@xonshiz)
+
+
+# Architecture :
+![Architecture Image](https://raw.githubusercontent.com/Xonshiz/HarperDB-Hackathon-2018/master/images/Architecture.jpg)
+
+
+# Insights :
+![Blood Groups In A Country](https://raw.githubusercontent.com/Xonshiz/HarperDB-Hackathon-2018/master/images/Misc/6.png)
+
+![Blood Groups In A State](https://raw.githubusercontent.com/Xonshiz/HarperDB-Hackathon-2018/master/images/Misc/7.png)
+
+![Blood Groups In World](https://raw.githubusercontent.com/Xonshiz/HarperDB-Hackathon-2018/master/images/Misc/8.png)
 
 
 # Running This Project :
-
 The minimum Android OS that you need to run this project is Lollipop (API Level 21). So, make sure you're satisfying the minimum requirements first. Otherwise, your handset won't be able to parse the apk file.
 
 - ### Permissions Required :
@@ -32,9 +43,7 @@ The minimum Android OS that you need to run this project is Lollipop (API Level 
 But, if for some reason, you don't want to or can't install Visual Studio, you will need to have .NET, Xamarin, Android SDK and required Packages in your system's local path for you to be able to compile and execute this application project.
 
 
-
 # Screens
-
 ![](images/3.png?raw=true)
 
 ![](images/4.png?raw=true)
